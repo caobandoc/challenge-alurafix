@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import ButtonComponent from "./components/Button";
+import Header from "./components/Header";
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ButtonComponent variant="contained" label="pendejo" />
+    <Header />
   </React.StrictMode>
 );
