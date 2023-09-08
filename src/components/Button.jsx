@@ -1,11 +1,11 @@
-import React from 'react'
+import { Button } from "@mui/material";
 
-const Button = ({label, onClick, style}) => {
+const ButtonComponent = ({ variant, label, onClick, style }) => {
   return (
-    <button onClick={onClick} style={style}>
+    <Button variant={variant} onClick={onClick} style={style}>
       {label}
-    </button>
-  )
-}
+    </Button>
+  );
+};
 
-export default Button;
+export default ButtonComponent;
