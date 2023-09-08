@@ -1,0 +1,9 @@
+section.footer{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #2A7AE4;
+}
