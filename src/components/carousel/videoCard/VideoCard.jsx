@@ -5,6 +5,7 @@ export default function VideoCard({ video, borde }) {
     height: "261px",
     width: "432px",
     border: "4px solid " + (borde || "#6bd1ff"),
+    borderRadius: "4px",
   };
 
   if (!video) {
@@ -15,7 +16,7 @@ export default function VideoCard({ video, borde }) {
     video.urlImagen || "https://fakeimg.pl/500x300/?text=AluraFlix&font=roboto";
 
   return (
-    <a href={video.urlVideo}>
+    <a href={video.urlVideo} target="_blank" rel="noopener noreferrer">
       <img src={img} alt="" style={styleSize} />
     </a>
   );

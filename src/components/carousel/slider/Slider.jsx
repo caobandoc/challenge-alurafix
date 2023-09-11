@@ -7,31 +7,34 @@ import VideoCard from "../videoCard/VideoCard";
 import useWindowSize from "../../hooks/useWindowSize";
 
 import "swiper/css";
+import "./Slider.css"
 
 export default function Slider({ videos, borde }) {
   const { width } = useWindowSize();
 
   const getSlidesPerView = () => {
-    return (width * 3.1) / 1440;
+    return (width * 3.5) / 1920;
   };
 
   return (
-    <Swiper
-      slidesPerView={getSlidesPerView()}
-      spaceBetween={30}
-      freeMode={true}
-      pagination={{
-        clickable: true,
-      }}
-      modules={[FreeMode, Pagination]}
-      className="video-slider"
-    >
-      {videos.map((video) => (
-        <SwiperSlide key={video.id}>
-          <VideoCard video={video} borde={borde} />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="container">
+      <Swiper
+        slidesPerView={getSlidesPerView()}
+        spaceBetween={30}
+        freeMode={true}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[FreeMode, Pagination]}
+        className="video-slider"
+      >
+        {videos.map((video) => (
+          <SwiperSlide key={video.id}>
+            <VideoCard video={video} borde={borde} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 }
 

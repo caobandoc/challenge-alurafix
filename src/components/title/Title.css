@@ -1,0 +1,20 @@
+.title {
+  width: 100%;
+  padding-left: 40px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  align-self: start;
+  align-items: center;
+  gap: 11px;
+}
+
+.title h1{
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.title p{
+  font-size: 18px;
+  font-weight: 300;
+}

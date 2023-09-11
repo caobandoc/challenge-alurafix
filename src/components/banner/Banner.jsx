@@ -18,7 +18,9 @@ export default function Banner() {
         </div>
 
         <div className="banner-video">
-          <img src="/video-banner.jpg" alt="" />
+          <a href="https://www.youtube.com/watch?v=ov7vA5HFe6w" target="_blank" rel="noopener noreferrer">
+            <img src="/video-banner.jpg" alt="" />
+          </a>
         </div>
       </div>
     </section>

@@ -12,11 +12,7 @@ export default function DefaultPage() {
       <Header />
       <Banner />
       {categorias.map((categoria) => (
-        <Carrusel
-          key={categoria.id}
-          videos={categoria.videos}
-          borde={categoria.color}
-        />
+        <Carrusel key={categoria.id} categoria={categoria} />
       ))}
       <Footer />
     </section>
