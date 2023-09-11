@@ -8,13 +8,13 @@ import { categorias } from "../../db.json";
 
 export default function DefaultPage() {
   return (
-    <section>
+    <>
       <Header />
       <Banner />
       {categorias.map((categoria) => (
         <Carrusel key={categoria.id} categoria={categoria} />
       ))}
       <Footer />
-    </section>
+    </>
   );
 }
