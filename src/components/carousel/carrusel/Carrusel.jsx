@@ -5,9 +5,10 @@ import Slider from "../slider/Slider";
 import "./Carrusel.css";
 
 export default function Carrusel({ videos, borde }) {
+  console.log(borde);
   return (
     <div className="carrusel">
-      <Slider videos={videos} border={borde} />
+      <Slider videos={videos} borde={borde} />
     </div>
   );
 }
