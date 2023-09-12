@@ -37,13 +37,13 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
-      - name: Find and Replace
+      - name: Find and Replace jsx
         uses: jacobtomlinson/gha-find-replace@v3
         with:
           find: '<img src="/'
           replace: '<img src="/challenge-alurafix/'
           regex: "**.jsx"
-      - name: Find and Replace
+      - name: Find and Replace bd.json
         uses: jacobtomlinson/gha-find-replace@v3
         with:
           find: '"urlImagen": "/'
