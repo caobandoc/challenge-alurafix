@@ -37,6 +37,18 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: '<img src="/'
+          replace: '<img src="/challenge-alurafix/'
+          regex: "**.jsx"
+      - name: Find and Replace
+        uses: jacobtomlinson/gha-find-replace@v3
+        with:
+          find: '"urlImagen": "/'
+          replace: '"urlImagen": "/challenge-alurafix/'
+          regex: "db.json"
       - name: Build
         run: npm run build
       - name: Setup Pages
